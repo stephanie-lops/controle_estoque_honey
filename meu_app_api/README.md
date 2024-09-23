@@ -9,11 +9,12 @@ O objetivo aqui é listar os produtos de uma loja de roupas, com o intuito de re
 Utilizando 4 informações: nome do item, imagem, tamanho e quantidade.
 
 Nessa coleção atual há 4 itens cadastrados na loja "Honey":
+```
 Button-Detail Shirt
 Flared Skirt
 Cargo Jeans
 Soft Bra
-
+```
 Todos os itens estão disponíveis nos tamanhos PP, P, M, G, e GG.
 
 ---
