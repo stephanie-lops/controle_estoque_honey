@@ -1,8 +1,111 @@
+------- ENGLISH ---------
+
+# [API] Honey Store: Parts Inventory
+## Clothing Parts Inventory
+**Author: Stephanie Lopes**
+
+This project is my final MVP of Sprint 1 of the **Basic Full Stack Development** course at PUC RIO, 2024.
+
+The goal here is to list the products of a clothing store, in order to record an inventory of items, input and output of parts.
+
+Using 4 pieces of information: item name, image, size and quantity.
+
+In this current collection there are 4 items registered in the "Honey" store:
+```
+Button-Detail Shirt
+Flared Skirt
+Cargo Jeans
+Soft Bra
+```
+All items are available in sizes PP, P, M, G, and GG.
+
+---
+## How to run
+
+You will need to have all the python libs listed in `requirements.txt` installed.
+After cloning the repository, you need to go to the root directory, via the terminal, to be able to execute the commands described below.
+
+> It is strongly recommended to use virtual environments of the [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html) type.
+
+Create virtual env environment:
+
+```
+python3 -m venv env
+```
+
+Activate virtual env environment (Windows):
+
+```
+.\env\Scripts\activate
+```
+
+Install the dependencies/libraries, described in the `requirements.txt` file.
+
+```
+(env)$ pip install -r requirements.txt
+```
+
+To run the API, simply run:
+
+```
+(env)$ flask run --host 0.0.0.0 --port 5000
+```
+
+In development mode, it is recommended to run using the reload parameter, which will automatically restart the server after a change in the source code.
+
+```
+(env)$ flask run --host 0.0.0.0 --port 5000 --reload
+```
+
+Open [http://localhost:5000/#/](http://localhost:5000/#/) in the browser to check the status of the API running.
+
+---
+## How to use routes in Swagger
+
+To add an item through the POST route:
+```
+1 - Click on Try it out.
+2 - Fill in the name, quantity and size fields.
+3 - Click on Execute.
+```
+
+To edit an item using the PUT route:
+
+```
+1 - Click on Try it out.
+2 - Click on the Request body field.
+3 - Select all with ctrl A.
+4 - Delete.
+5 - Insert the following code, editing the "originalName" and "originalSize" fields according to the item you want to edit:
+
+{
+"originalName": "Button-Detail Shirt",
+"originalSize": "M",
+"nome": "Button-Detail Shirt",
+"size": "GG",
+"quantity": 5
+}
+
+6 - Click on Execute.
+```
+
+To delete an item using the DELETE route:
+```
+1 - Click on Try it out.
+2 - Fill in the nome and size fields.
+3 - Click on Execute.
+```
+
+
+
+------- PORTUGUESE ---------
+
+
 # [API] Honey Store: Parts Inventory
 ## Inventário de Peças de Roupas
 **Autor: Stephanie Lopes**
 
-Este projeto é o meu MVP da Sprint 1 do curso de **Desenvolvimento Full Stack Básico** da PUC RIO, 2024.
+Este projeto é o meu MVP final da Sprint 1 do curso de **Desenvolvimento Full Stack Básico** da PUC RIO, 2024.
 
 O objetivo aqui é listar os produtos de uma loja de roupas, com o intuito de registrar um inventário dos itens, entrada e saída de peças.
 
